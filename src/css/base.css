@@ -85,4 +85,6 @@ img {
   height: auto;
 }
 
-
+body {
+  font-family: var(--font-family);
+}
