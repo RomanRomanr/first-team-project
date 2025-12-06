@@ -57,3 +57,37 @@
 /* Перед злиттям ВИДАЛИТИ всі змінні що знаходяться у файлі! */
 
 /* Стилі пишемо нище цього коментаря */
+
+ul, ol{
+        margin: 0;
+        list-style: none;
+        padding-left: 0;}
+
+
+.container{
+	width: 100%;
+	max-width: 320px;
+	padding: 48px 20px;
+	background-color: #75d281;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	box-sizing: border-box;
+	border-radius: 16px;
+}
+.container-list{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+ }
+.footer-list{
+	list-style: none;
+	padding: 0;
+	margin-top: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	text-align: center;
+}
+
