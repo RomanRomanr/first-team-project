@@ -57,3 +57,109 @@
 /* Перед злиттям ВИДАЛИТИ всі змінні що знаходяться у файлі! */
 
 /* Стилі пишемо нище цього коментаря */
+body{
+	background: var(--color-emerald-lightest);
+}
+
+ul{
+	list-style-type: none;
+}
+
+.testimonial-sect{
+	padding: 32px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial-sect {
+    padding: 64px 32px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .testimonial-sect {
+    padding: 64px;
+  }
+}
+
+
+.testimonial-list{
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: row;
+	column-gap: 24px;
+	row-gap: 32px;
+  }
+
+  .testimonial-item{
+	flex: 0 1 calc(50% - 40px);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .testimonial-list {
+    display: flex;
+	flex-wrap: nowrap;
+	gap: 24px;
+  }
+
+  .testimonial-item{
+	flex: auto;
+  }
+}
+
+.testimonial-tittle{
+	font-family: var(--second-family);
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.2;
+	letter-spacing: 0.01em;
+	text-align: center;
+	color: var(--color-scheme-1-text);
+	margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1158px) {
+  .testimonial-tittle {
+    max-width: 540px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+  }
+}
+
+.svg-star-wrapper{
+	margin-bottom: 12px;
+}
+
+.star-icon-filled{
+	fill: var(--color-scheme-2-foreground);
+}
+
+.star-icon-empty{
+	fill: var(--color-scheme-2-foreground);
+}
+
+.testimonial-paragraph{
+	font-family: var(--second-family);
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.4;
+	letter-spacing: 0.01em;
+	color: var(--color-scheme-1-text);
+	margin-bottom: 12px;
+}
+
+.testimonial-author{
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.6;
+	color: var(--color-scheme-1-text);
+}
