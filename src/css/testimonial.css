@@ -61,10 +61,6 @@ body{
 	background: var(--color-emerald-lightest);
 }
 
-ul{
-	list-style-type: none;
-}
-
 .testimonial-sect{
 	padding: 32px 16px;
 }
@@ -99,7 +95,8 @@ ul{
   }
 
   .testimonial-item{
-	flex: 0 1 calc(50% - 40px);
+	flex: 0 1 calc(50% - 24px);
+	max-width: 380px;
   }
 }
 
@@ -156,6 +153,13 @@ ul{
 	margin-bottom: 12px;
 }
 
+@media screen and (min-width: 768px) {
+  .testimonial-paragraph {
+    margin-bottom: 24px;
+  }
+}
+
+
 .testimonial-author{
 	font-family: var(--font-family);
 	font-weight: 600;
@@ -163,3 +167,11 @@ ul{
 	line-height: 1.6;
 	color: var(--color-scheme-1-text);
 }
+
+@media screen and (min-width: 1158px) {
+  .testimonial-lower-name {
+    margin-bottom: 52px;
+  }
+}
+
+
