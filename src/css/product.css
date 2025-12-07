@@ -101,7 +101,7 @@
 	flex-direction: column;
 	align-items: center;
 	flex-grow: 1;
-	/* justify-content: space-between; */
+	
 	
 }
 
@@ -175,6 +175,7 @@
 	
 	.item-product {
 		flex-basis: calc((100% - 24px) / 2);
+	
 	}
 
 	.buy {
