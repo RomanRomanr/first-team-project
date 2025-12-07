@@ -190,12 +190,22 @@
 	}
 
 
-  .item-product {
-    flex-basis: calc((100% - 72px) / 4);
-  }
-
-
-  .buy {
-		min-width: 310px;
+	.item-product {
+		flex-basis: calc((100% - 72px) / 4);
+		
 	}
+
+	#ecoLunch_bag {
+		row-gap: 27px;
+	}
+
+	#ecokids_bag {
+		row-gap: 27px;
+	}
+
+	.buy {
+			min-width: 310px;
+	}
+
+	
 }
