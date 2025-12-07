@@ -1,32 +1,57 @@
-<section class="contact-section">
-  <h2 class="title-contact">Залишились питання?
-    Зв'яжіться з нами!
-  </h2>
-  <p class="paragraph-contact">Ми тут, щоб допомогти!</p>
-  <form>
-    <div сlass="input-group">
-        <label class="label-contact" for="name">Ім'я</label>
-        <div class="field-wrapper">
-        <input class="text-field" type="text" id="user-name" name="user-name" placeholder="Іван" minlength="5" maxlength="64"  required>
+
+<section class="contact-section" id="contact">
+  <div class="container">
+
+    <form class="contact-form">
+
+      <div class="form-left">
+
+        <h2 class="title-contact">
+          Залишились питання? 
+          Зв'яжіться з нами!
+        </h2>
+
+        <p class="paragraph-contact">
+          Ми тут, щоб допомогти!
+        </p>
+
+        <div class="input-group">
+          <label class="label-contact" for="user-name">Ім'я</label>
+          <div class="field-wrapper">
+            <input class="text-field" type="text" id="user-name" name="user-name" placeholder="Іван" minlength="5"
+            maxlength="64" required>
+            <p class="text-invalid">Error text</p>
+          </div>
         </div>
-    </div>
-<div сlass="input-group">
-    <label class="label-contact" for="name">Електронна пошта</label>
-    <div class="field-wrapper">
-        <input class="text-field" type="email" id="user-email" name="user-email" placeholder="hello@ecotote.com"
-         pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
-    </div>
-</div>
-<div сlass="response">
-    <label class="label-contact" for="user-comment">Повідомлення</label>
-    <textarea class="response-textarea" name="user-message" id="user-message" maxlength="500" placeholder="Введіть своє повідомлення..."></textarea>
-</div>
-    <button сlass="button-form" type="submit">Надіслати</button>
-  </form>
-<picture>
-    <source media="(min-width: 1440px)" srcset="./img/contact/for-contact-desk.jpg 1x, ./img/contact/for-contact@2x-desk.jpg 2x">
-    <source media="(min-width: 768px)" srcset="./img/contact/for-contact-tablet.jpg 1x, ./img/contact/for-contact@2x-tablet.jpg 2x">
-    <source media="(max-width: 767px)" srcset="./img/contact/for-contact-mob.jpg 1x, ./img/contact/for-contact@2x-mob.jpg 2x">
-    <img class="portfolio-images" src="./img/contact/for-contact-mob.jpg" alt="" width="288" height="428">
-</picture>
+
+        <div class="input-group">
+          <label class="label-contact" for="user-email">Електронна пошта</label>
+          <div class="field-wrapper">
+            <input class="text-field" type="email" id="user-email" name="user-email" placeholder="hello@ecotote.com"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+            <p class="text-invalid">Error text</p>
+          </div>
+        </div>
+
+        <div class="response">
+          <label class="label-contact" for="user-message">Повідомлення</label>
+          <textarea class="response-textarea" name="user-message" id="user-message" maxlength="500"
+            placeholder="Введіть своє повідомлення..."></textarea>
+        </div>
+
+        <button class="button-form" type="submit">Надіслати</button>
+      </div>
+      <div class="picture">
+        <picture>
+          <source media="(min-width: 1440px)"
+            srcset="./img/contact/for-contact-desk.jpg 1x, ./img/contact/for-contact@2x-desk.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="./img/contact/for-contact-tablet.jpg 1x, ./img/contact/for-contact@2x-tablet.jpg 2x">
+          <source media="(max-width: 767px)"
+            srcset="./img/contact/for-contact-mob.jpg 1x, ./img/contact/for-contact@2x-mob.jpg 2x">
+          <img class="form-picture" src="./img/contact/for-contact-mob.jpg" alt="" width="288" height="428">
+        </picture>
+      </div>
+    </form>
+  </div>
 </section>
