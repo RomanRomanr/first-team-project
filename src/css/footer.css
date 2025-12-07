@@ -114,9 +114,14 @@ ul, ol{
 	height: 32px;
 	margin: 0 auto 48px;
 	
-
-
 }
+hr{
+	border: 1px solid rgba(3, 10, 6, 0.15);
+width: 704px;
+height: 0px;
+margin: 0;
+}
+
 .footer-list-icons{
 	flex-direction: row;
 	display: flex;
@@ -225,7 +230,7 @@ pointer-events: none;
     .address-footer {
         width: 306px;
 		height: 26px;
-		padding-top: 40px;
+		padding-top: 24px;
     }
 
     .address-footer-list {
@@ -310,15 +315,24 @@ pointer-events: none;
         gap: 32px;
         justify-content: center;
         width: 100%;
-		margin-top: 68px;
+		
 	}
 	.address-footer{
 		width: 1312px;
 		height: 80px;
+		padding-top: 52px;
+
 	}
 	.potext{
 		margin-top: 16px;
-		
+
+	}
+	hr{
+		border: 1px solid rgba(3, 10, 6, 0.15);
+	width: 1312px;
+	height: 0px;
+	
+	 
 	}
 }
 
