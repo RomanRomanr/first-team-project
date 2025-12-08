@@ -126,6 +126,9 @@ ul, ol{
 }
 .link-address{
 	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.6;
 }
 .potext{
 	font-family: "Fira Sans", sans-serif;
