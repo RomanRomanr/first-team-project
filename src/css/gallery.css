@@ -193,17 +193,26 @@
 	}
 
 	.gallery-item {
-		display: block;
+		display: flex;
+		flex-direction: row;
+		gap: 24px;
+	}
+
+	.gallery-item-part-1 .gallery-item-desc-big {
+		min-width: 421px;
+		min-height: 421px;
 	}
 
 	.gallery-item-part-1 {
-		display: flex;
-		flex-direction: row;
+		display: block;
 	}
+
+	
 
 	.gallery-item-part-2 {
 		display: flex;
 		flex-direction: row;
+		gap: 24px;
 	}
 
 	.gallery-item-desc-big {
