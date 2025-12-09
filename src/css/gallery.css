@@ -1,59 +1,148 @@
-:root {
-	--color-scheme-1-background: var(--color-emerald-lightest);
-	--color-neutral-darkest: #030a06;
-	--color-scheme-1-border: var(--opacity-neutral-darkest-15);
-	--color-scheme-1-text: var(--color-neutral-darkest);
-	--color-neutral-lighter: #d9dad9;
-	--color-white: #fff;
-	--color-neutral-lightest: #f2f2f2;
-	--color-neutral-light: #b3b5b4;
-	--color-neutral: #818482;
-	--color-neutral-dark: #4e5350;
-	--color-neutral-darker: #1c221e;
-	--opacity-transparent: rgba(255, 255, 255, 0);
-	--color-scheme-1-foreground: var(--color-emerald-lighter);
-	--color-scheme-1-accent: var(--color-neutral-darkest);
-	--opacity-white-5: rgba(255, 255, 255, 0.05);
-	--opacity-white-10: rgba(255, 255, 255, 0.1);
-	--opacity-white-15: rgba(255, 255, 255, 0.15);
-	--opacity-white-20: rgba(255, 255, 255, 0.2);
-	--opacity-white-30: rgba(255, 255, 255, 0.3);
-	--opacity-white-40: rgba(255, 255, 255, 0.4);
-	--opacity-white-50: rgba(255, 255, 255, 0.5);
-	--opacity-white-60: rgba(255, 255, 255, 0.6);
-	--opacity-neutral-darkest-5: rgba(3, 10, 6, 0.05);
-	--opacity-neutral-darkest-10: rgba(3, 10, 6, 0.1);
-	--opacity-neutral-darkest-15: rgba(3, 10, 6, 0.15);
-	--opacity-neutral-darkest-20: rgba(3, 10, 6, 0.2);
-	--opacity-neutral-darkest-30: rgba(3, 10, 6, 0.3);
-	--opacity-neutral-darkest-40: rgba(3, 10, 6, 0.4);
-	--opacity-neutral-darkest-50: rgba(3, 10, 6, 0.5);
-	--opacity-neutral-darkest-60: rgba(3, 10, 6, 0.6);
-	--color-emerald-lightest: #ebf8ed;
-	--color-emerald-lighter: #d7f2db;
-	--color-emerald-light: #75d281;
-	--color-emerald: #3ac04c;
-	--color-emerald-dark: #2e993c;
-	--color-emerald-darker: #174c1e;
-	--color-emerald-darkest: #113916;
-	--color-scheme-2-text: var(--color-neutral-darkest);
-	--color-scheme-2-background: var(--color-emerald-light);
-	--color-scheme-2-border: var(--opacity-neutral-darkest-15);
-	--color-scheme-2-accent: var(--color-neutral-darkest);
-	--color-scheme-2-foreground: var(--color-emerald);
-	--color-scheme-3-text: var(--color-neutral-darkest);
-	--color-scheme-3-background: var(--color-white);
-	--color-scheme-3-border: var(--opacity-neutral-darkest-15);
-	--color-scheme-3-accent: var(--color-neutral-darkest);
-	--color-scheme-3-foreground: var(--color-neutral-lightest);
-	--color-error-red: #d64040;
+
+
+.gallery-container {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	align-items: center;
+	background: var(--color-scheme-1-background);
 }
 
-:root {
-  --font-family: "Fira Sans", sans-serif;
-  --second-family: "Comfortaa", sans-serif;
+.gallery-title {
+	font-family: var(--second-family);
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 43px;
+		letter-spacing: 0.01em;
+		text-align: center;
+		color: var(--color-scheme-3-text);
 }
 
-/* Перед злиттям ВИДАЛИТИ всі змінні що знаходяться у файлі! */
+.gallery-subtitle {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 29px;
+	text-align: center;
+	text-decoration: none;
+}
 
-/* Стилі пишемо нище цього коментаря */
+.gallery-list {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+
+.gallery-item-img {
+	border-radius: 32px;
+	max-width: 288px;
+}
+
+@media screen and (min-width: 768px) {
+
+	.gallery-title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 43px;
+		letter-spacing: 0.01em;
+		text-align: center;
+		color: var(--color-scheme-3-text);
+		margin: 64px 32px 24px;
+	}
+
+	.gallery-subtitle {
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 160%;
+		text-align: center;
+		margin: 0 32px 32px;
+		text-decoration: none;
+	}
+
+		.gallery-list {
+			flex-wrap: wrap;
+			max-height: 1062px;
+			gap: 24px;
+			align-content: center;
+			min-width: 704px;
+		}
+
+	.gallery-item {
+		max-width: 421px;
+		height: auto;
+	}
+
+	.gallery-list-item-first {
+		order: 4;
+	}
+
+	.gallery-list-item-second {
+		order: 3;
+	}
+
+	.gallery-list-item-three {
+		order: 2;
+	}
+
+	.gallery-list-item-four {
+		order: 1;
+	}
+
+	.gallery-item-img {
+		max-width: 320px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+
+	.gallery-title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 43px;
+		letter-spacing: 0.01em;
+		text-align: center;
+		color: var(--color-scheme-3-text);
+		margin: 64px 0 24px 0;
+	}
+
+	.gallery-subtitle {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 29px;
+		text-align: center;
+		color: var(--color-scheme-3-text);
+		margin-bottom: 32px;
+	}
+
+		.gallery-list {
+			max-height: 870px;
+			gap: 24px;
+			min-width: 1312px;
+		}
+
+	.gallery-item {
+		width: calc((100% - 48px) / 3);
+	}
+
+	.gallery-list-item-first {
+			order: 2;
+		}
+	
+	.gallery-list-item-second {
+			order: 3;
+		}
+	
+	.gallery-list-item-three {
+			order: 4;
+		}
+	
+	.gallery-list-item-four {
+			order: 1;
+		}
+
+	.gallery-item-img {
+		max-width: 421px;
+	}
+}
