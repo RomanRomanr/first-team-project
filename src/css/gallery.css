@@ -31,12 +31,12 @@
 .gallery-list {
 	display: flex;
 	flex-direction: column;
+	gap: 16px;
 }
 
 
 .gallery-item-img {
 	border-radius: 32px;
-	margin-bottom: 24px;
 	max-width: 288px;
 }
 
@@ -75,7 +75,7 @@
 		}
 
 	.gallery-item {
-		width: calc((100% - 26px) / 2);
+		max-width: 421px;
 		height: auto;
 	}
 
@@ -132,7 +132,7 @@
 		}
 
 	.gallery-item {
-		width: calc((100% - 24px) / 3);
+		width: calc((100% - 48px) / 3);
 	}
 
 	.gallery-list-item-first {
@@ -150,10 +150,6 @@
 	.gallery-list-item-four {
 			order: 1;
 		}
-
-	.gallery-item-img {
-		margin-bottom: 0;
-	}
 
 	.gallery-item-img {
 		max-width: 421px;
