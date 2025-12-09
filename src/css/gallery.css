@@ -37,13 +37,14 @@
 .gallery-item-img {
 	border-radius: 32px;
 	margin-bottom: 24px;
+	max-width: 288px;
 }
 
 @media screen and (min-width: 768px) {
 
-	.gallery-container {
+	 .gallery-container {
 		min-width: 768px;
-	}
+	} 
 
 	.gallery-title {
 		font-weight: 700;
@@ -93,6 +94,7 @@
 		order: 1;
 	}
 
+	
 }
 
 @media screen and (min-width: 1440px) {
@@ -147,5 +149,9 @@
 
 	.gallery-item-img {
 		margin-bottom: 0;
+	}
+
+	.gallery-item-img {
+		max-width: 421px;
 	}
 }
