@@ -1,7 +1,6 @@
 
 
 .gallery-container {
-	min-width: 320px;
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
@@ -41,10 +40,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
-	 .gallery-container {
-		min-width: 768px;
-	} 
 
 	.gallery-title {
 		font-weight: 700;
@@ -101,10 +96,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-
-	.gallery-container {
-		width: 100%;
-	}
 
 	.gallery-title {
 		font-weight: 700;
