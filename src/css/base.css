@@ -88,3 +88,7 @@ img {
 body {
   font-family: var(--font-family);
 }
+
+html {
+  scroll-behavior: smooth;
+}
