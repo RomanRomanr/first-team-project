@@ -17,7 +17,8 @@
   "main": "vite.config.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/first-team-project/",
+    "build": "vite build",
+    "build:gh": "vite build --base=/first-team-project/",
     "preview": "vite preview"
   },
   "dependencies": {
